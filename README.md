@@ -1,4 +1,4 @@
-#NIR WORLD FOOD GRAPH MODEL
+NIR WORLD FOOD GRAPH MODEL
 ----------------------------
 
 Created a Graph DS and plotted it for visual representation
@@ -59,6 +59,18 @@ after food will be consumed while the food production will also be somewhere.
 one day will come when there will be decrease in the food scarcity as the food is been delivered in all parts and y quantity of scarcity will decrease now our model can slow down with less consumption of other resources and maintain the solution
 
 since there is no consumption in an area that's why food gets rotten but if the flow of food grows near consumer then the food bank consumption will increase and wastage will decrease
+
+If food gets rotten you can still supply water which does rott i mean clean water can be passed on for some time to create a base condition for this model to work perfectely
+
+we need to analyse the base condition for this model to work using our Graph virtually and create such situation in the physical world and work accordingly to the Graph generated prediction and analysis to solve the world wide food scarcity problem.
+
+I know there are many flaws in the Idea but After the model is over we can predict the base condition needed for the production and consumption and connectivity problems can be solved too. We will get enough data to work on and maybe one day we will have ZERO FOOD SCARCITY IN THE WHOLE WORLD...............
+
+FEEL FREE TO WORK ON THIS IDEA ON YOUR OWN.
+AS WE MIGHT NOT BE ABLE TO ACHIEVE SOME BASE CASES BUT SURELY OUR FUTURE GENERATIONS CAN.
+AND I HOPE WE OURSELVES ACHIEVE THE BASE CASE.
+
+ALL FOR THE FUTURE GENERATION.
 
 ---------------------------------------
 # FOR EVERYONE WHO NEEDS TO HEAR THIS
