@@ -37,7 +37,7 @@ We will also gain the amount of wastage of food in the place.
 
 # AIM
 
-Creating World Wide Zero Food Scaricity Solution For Future Generations
+Creating World Wide Zero Food Scarcity Solution For Future Generations
 The idea works just like the NETWORK BUT I AM ADDING UP THE ALGORITHMS TO CREATE A MORE EFFICIENT SOLUTION AND AVOID CONFLITS IN THE NETWORK.
 Visualizing the viability using the graph DS
 Trying to Calculate the overall data and actions required per day/week
