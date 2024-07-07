@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-dict=dict()
+radius=dict()
 class Node:
     def __init__(self, id, x, y, distance,value):
         self.id = id
@@ -19,10 +19,10 @@ def add_node(graph, parent_id, distance,i):
     
     # Calculate the angle from the center to the center node for now i have used random 0 to 360
     angle = np.random.uniform(0, 2 * np.pi)
-    while angle in dict[0]:    
+    while angle in radius[distance]:    
         angle = np.random.uniform(0, 2 * np.pi)
-    # dict[i].append(angle)
-    dict[0].append(angle)
+    radius[distance].append(angle)
+    # dictionary[0].append(angle)
 
 
     # Place the new node at the specified distance from the center node along the calculated angle
@@ -34,6 +34,18 @@ def add_node(graph, parent_id, distance,i):
     graph[new_node_id] = new_node
     parent_node.children.append(new_node)
     return new_node_id
+
+starving_areas=[]
+
+def count_starvation(graph):
+    for node in graph.values():
+        if node.value<=20:
+            starving_areas.append(node)
+
+def print_starving_areas(areas):
+    for area in areas:
+        print(f'{str(area.id)+" "+str(area.value)}')
+
 
 def draw_graph(graph):
     fig, ax = plt.subplots()
@@ -65,16 +77,22 @@ graph = {0: Node(0, 0, 0, 0,10)}
 # Add initial nodes from the central node
 # for now i am using loop to create new as nodes as much as i like with the same distance multiplied by range of random number between (index-1 to index) of loop which creates 
 maxdist=1
-dict[0]=[]
+# dictionary[0]=dict()
 for i in range(1,3):
-    # dict[i-1]=[]
+    # temp=dict()
+    # dictionary[i-1]=temp
     dist=maxdist
     for j in range(10):
         distance=np.random.uniform(dist+30,dist+100)
+        if distance not in radius:
+            radius[distance]=[]
+
         add_node(graph, 0,distance,i-1)
         if distance>maxdist:
             maxdist=distance
         
 
+count_starvation(graph)
+print_starving_areas(starving_areas)
 # Draw the graph
 draw_graph(graph)
