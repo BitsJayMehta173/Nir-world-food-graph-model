@@ -1,0 +1,18 @@
+create nodes
+
+create graph and connect nodes edge being distance between them
+
+connect each node with each other node keeping a certain distance radius as threshold or unless you get a certain node in certain degree atleast one node should be there in 0 to 180
+
+now calculate the starving areas in the graph with the node.value if less than certain starving threshold always keep record of a certain radius so that it can pre compute maximum starving area to later on form a circle around the area to form a maximum radius which is considered to be red zone
+
+now after creating a circle around the starving zone
+
+find out the nearest high production area
+
+then start flowing food supplies form the outer radius to inner radius and 
+initialize circular mechanism.
+As the supplies will continuously flow we can concentrate a flow in a red zone more
+
+As the nearest highest production is donating higher amount it needs to be balanced by another highest production near it and the supply chain goes on.
+
