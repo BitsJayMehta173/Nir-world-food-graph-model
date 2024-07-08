@@ -8,6 +8,7 @@ now calculate the starving areas in the graph with the node.value if less than c
 
 now after creating a circle around the starving zone
 
+from outermost nodes in the radius of marked starving areas
 find out the nearest high production area
 
 then start flowing food supplies form the outer radius to inner radius and 
@@ -16,3 +17,11 @@ As the supplies will continuously flow we can concentrate a flow in a red zone m
 
 As the nearest highest production is donating higher amount it needs to be balanced by another highest production near it and the supply chain goes on.
 
+now what if i say if government can do farming in each cities and areas in the world and use it for food bank reserve production
+
+calculate the minimum number of time , production and necessities for the smooth flow
+
+On the edges of continent we will use chakravyuh model or golden ratio model to again distribute it to the nearest required corner
+
+
+if in case the food is not reached another path will be formed and the food will return and again be passed to the donated path ways
